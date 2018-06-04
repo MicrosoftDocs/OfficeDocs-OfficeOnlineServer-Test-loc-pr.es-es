@@ -120,5 +120,5 @@ Encontrará más información sobre Visores en línea en [Planeación de Visores
 [Implementar Office Web Apps Server](deploy-office-web-apps-server.md)  
   
 
-[deploy-office-web-apps-server.md](deploy-office-web-apps-server.md)
+[https://technet.microsoft.com/es-es/library/jj219455](deploy-office-web-apps-server.md)
 
