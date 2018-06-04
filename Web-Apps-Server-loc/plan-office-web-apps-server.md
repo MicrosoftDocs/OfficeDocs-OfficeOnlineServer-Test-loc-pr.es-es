@@ -464,5 +464,5 @@ Si no usa WSUS o System Center Administrador de configuración, configure las ac
 [Office.com, (para obtener ayuda con Office Web Apps en su dispositivo móvil o de escritorio)](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
+[https://technet.microsoft.com/es-es/library/jj966220](apply-software-updates-to-office-web-apps-server.md)
 
