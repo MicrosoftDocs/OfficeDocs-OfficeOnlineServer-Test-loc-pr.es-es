@@ -227,7 +227,7 @@ Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidor
 
   - **–EditingEnabled** habilita la edición en Office Web Apps cuando se usa con SharePoint 2013. Este parámetro no se usa en Lync Server 2013 porque dicho host no admite la edición.
 
-Los parámetros adicionales para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Los parámetros adicionales para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Si ve los mensajes “500 excepciones de servicio web” o “500.21: error interno del servidor”
 
@@ -278,7 +278,7 @@ Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidor
 
   - **–EditingEnabled** es opcional y habilita la edición en Office Web Apps cuando se usa con SharePoint 2013. Este parámetro no se usa en Lync Server 2013 porque dicho host no admite la edición.
 
-Los parámetros adicionales para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Los parámetros adicionales para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Si ve los mensajes “500 excepciones de servicio web” o “500.21: error interno del servidor”
 
@@ -343,7 +343,7 @@ Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidor
 
   - **–EditingEnabled** es opcional y habilita la edición en Office Web Apps cuando se usa con SharePoint 2013. Este parámetro no se usa en Lync Server 2013 porque dicho host no admite la edición.
 
-Otros parámetros para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Otros parámetros para configurar servicios de traducción, servidores proxy, compatibilidad con imágenes prediseñadas y visores en línea se describen en [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Si ve los mensajes “500 excepciones de servicio web” o “500.21: error interno del servidor”
 
@@ -353,7 +353,7 @@ Una vez que el primer servidor ejecuta Office Web Apps Server, ejecute el comand
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-¿Desea más información sobre estos parámetros? Puede encontrarlos en [New-OfficeWebAppsMachine](new-officewebappsmachine.md).
+¿Desea más información sobre estos parámetros? Puede encontrarlos en [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Paso 3: comprobar que la granja de servidores de Office Web Apps Server se ha creado correctamente
 
@@ -397,8 +397,8 @@ Si las características de .NET Framework 3.5 se instalaron y posteriormente se 
 ## Consulte también
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Guía básica de contenido de Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  

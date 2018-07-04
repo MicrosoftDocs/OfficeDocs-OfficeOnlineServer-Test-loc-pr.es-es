@@ -46,7 +46,7 @@ Tras una nueva versión de Office Web Apps Server, Microsoft ofrece una serie de
 </thead>
 <tbody>
 <tr class="odd">
-<td>La aplicación de actualizaciones de Office Web Apps Server mediante el proceso de actualizaciones automáticas no es compatible con Office Web Apps Server. Esto se debe a que las actualizaciones a un Office Web Apps Server se deben aplicar de una forma específica, como se describe en este artículo. Si las actualizaciones de Office Web Apps Server se aplican de forma automática, es posible que los usuarios no puedan ver o editar documentos en Office Web Apps y, en ese caso, tendrá que recompilar su granja de Office Web Apps Server. Para ello, debe quitar el Office Web Apps Server de la granja mediante <a href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</a>, desinstalar Office Web Apps Server con Agregar o quitar programas y, después, volver a instalar Office Web Apps Server siguiendo los pasos que se describen en <a href="deploy-office-web-apps-server.md">Implementar Office Web Apps Server</a>. Tras completar la nueva instalación, aplique la actualización siguiendo los pasos que se describen en este artículo.<br />
+<td>La aplicación de actualizaciones de Office Web Apps Server mediante el proceso de actualizaciones automáticas no es compatible con Office Web Apps Server. Esto se debe a que las actualizaciones a un Office Web Apps Server se deben aplicar de una forma específica, como se describe en este artículo. Si las actualizaciones de Office Web Apps Server se aplican de forma automática, es posible que los usuarios no puedan ver o editar documentos en Office Web Apps y, en ese caso, tendrá que recompilar su granja de Office Web Apps Server. Para ello, debe quitar el Office Web Apps Server de la granja mediante <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, desinstalar Office Web Apps Server con Agregar o quitar programas y, después, volver a instalar Office Web Apps Server siguiendo los pasos que se describen en <a href="deploy-office-web-apps-server.md">Implementar Office Web Apps Server</a>. Tras completar la nueva instalación, aplique la actualización siguiendo los pasos que se describen en este artículo.<br />
 Es importante que revise las instrucciones de <a href="plan-office-web-apps-server.md">Planeación de actualizaciones para Office Web Apps Server</a> y establezca un proceso de actualización para la granja de Office Web Apps Server.</td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ Puede encontrar la lista de actualizaciones más recientes disponibles para Offi
 
 Las actualizaciones que se publican para Office Web Apps Server actualizarán Office Web Apps Server y cualquier otro paquete de idiomas de Office Web Apps Server que esté instalado. No existen actualizaciones por separado para los paquetes de idiomas de Office Web Apps Server.
 
-Como parte del proceso de actualización, tendrá que volver a crear la granja de Office Web Apps Server. Para prepararse para volver a crear la granja de Office Web Apps Server, revise las propiedades de su granja de Office Web Apps Server actual ejecutando el cmdlet **Get-OfficeWebAppsFarm** de Windows PowerShell y revise los parámetros para [New-OfficeWebAppsFarm](new-officewebappsfarm.md). Los parámetros que utilice para **New-OfficeWebAppsFarm** deben ser los mismos que los que haya usado al configurar por primera vez la granja de Office Web Apps Server.
+Como parte del proceso de actualización, tendrá que volver a crear la granja de Office Web Apps Server. Para prepararse para volver a crear la granja de Office Web Apps Server, revise las propiedades de su granja de Office Web Apps Server actual ejecutando el cmdlet **Get-OfficeWebAppsFarm** de Windows PowerShell y revise los parámetros para [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Los parámetros que utilice para **New-OfficeWebAppsFarm** deben ser los mismos que los que haya usado al configurar por primera vez la granja de Office Web Apps Server.
 
 
 > [!NOTE]
@@ -92,7 +92,7 @@ Para aplicar actualizaciones de software a una granja de Office Web Apps Server 
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    En [New-OfficeWebAppsFarm](new-officewebappsfarm.md) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
+    En [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
 
 ## Aplicar actualizaciones de software a una granja de Office Web Apps Server de varios servidores
 
@@ -116,7 +116,7 @@ Para aplicar actualizaciones de software en una granja de Office Web Apps Server
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    En [New-OfficeWebAppsFarm](new-officewebappsfarm.md) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
+    En [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
 
 6.  En función del número de servidores que tenga en la granja de Office Web Apps Server, equilibre el tráfico de carga de la nueva granja. Puede aplazar este paso hasta que disponga de más servidores actualizados que se unirán a la granja.
 
@@ -133,10 +133,10 @@ Para aplicar actualizaciones de software en una granja de Office Web Apps Server
 ## Consulte también
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [Guía básica de contenido de Office Web Apps Server](content-roadmap-for-office-web-apps-server.md)  

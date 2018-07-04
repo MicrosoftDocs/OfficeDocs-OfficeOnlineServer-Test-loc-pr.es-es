@@ -340,7 +340,7 @@ La siguiente es una lista de recomendaciones que de tener en cuenta a medida que
 
   - **Planee comunicaciones entrantes y salientes.** En una implementación con conexión a Internet, enrute todas las comunicaciones salientes a través de un dispositivo NAT. En una granja multiservidor, controle todas las comunicaciones entrantes con un equilibrador de carga.
 
-  - **Asegúrese de que todos los servidores de la granja de servidores de Office Web Apps Server estén unidos a un dominio y formen parte de la misma unidad organizativa (OU).** Use el parámetro **FarmOU** en el cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) para impedir que otros servidores que no están en esta OU se unan a la granja de servidores.
+  - **Asegúrese de que todos los servidores de la granja de servidores de Office Web Apps Server estén unidos a un dominio y formen parte de la misma unidad organizativa (OU).** Use el parámetro **FarmOU** en el cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) para impedir que otros servidores que no están en esta OU se unan a la granja de servidores.
 
   - **Use el protocolo HTTPS para todas las solicitudes entrantes.**
 
@@ -398,13 +398,13 @@ Tenga en cuenta que al usar HTTP, el tráfico del equilibrador de carga a los se
 
 ## Restringir qué servidores se pueden unir a una granja de servidores de Office Web Apps Server según la pertenencia a la unidad organizativa
 
-Puede impedir que servidores no autorizados se unan a una granja de servidores de Office Web Apps Server creando una unidad organizativa para dichos servidores y especificando el parámetro FarmOU al crear la granja de servidores. Para obtener más información sobre el parámetro FarmOU, vea [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Puede impedir que servidores no autorizados se unan a una granja de servidores de Office Web Apps Server creando una unidad organizativa para dichos servidores y especificando el parámetro FarmOU al crear la granja de servidores. Para obtener más información sobre el parámetro FarmOU, vea [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Limitar el acceso del host para Office Web Apps Server mediante la lista Permitir
 
 La lista Permitir es una característica de seguridad que impide a los hosts no deseados conectarse a una granja de servidores de Office Web Apps Server y usarla para operaciones de archivos sin su consentimiento. Si agrega los dominios que contienen hosts aprobados a la lista Permitir, puede limitar los hosts a los que Office Web Apps Server permite solicitudes de operaciones de archivos, como la recuperación de archivos, la recuperación de metadatos y los cambios en archivos.
 
-Puede agregar dominios a la lista Permitir después de haber creado la granja de servidores de Office Web Apps Server. Para saber cómo agregar dominios a la lista Permitir, vea [New-OfficeWebAppsHost](new-officewebappshost.md).
+Puede agregar dominios a la lista Permitir después de haber creado la granja de servidores de Office Web Apps Server. Para saber cómo agregar dominios a la lista Permitir, vea [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 <table>
 <thead>
@@ -422,19 +422,19 @@ Puede agregar dominios a la lista Permitir después de haber creado la granja de
 
 ## Planeación de Visores en línea con Office Web Apps Server
 
-De manera predeterminada, la funcionalidad Visores en línea se habilita después de instalar Office Web Apps Server. Revise las siguientes instrucciones si prevé usar Visores en línea en su organización. En algunos casos, puede que desee deshabilitar algunas características en Visores en línea. Estas instrucciones hacen referencia a los parámetros que se establecen mediante los cmdlets de Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) y [Set-OfficeWebAppsFarm](set-officewebappsfarm.md).
+De manera predeterminada, la funcionalidad Visores en línea se habilita después de instalar Office Web Apps Server. Revise las siguientes instrucciones si prevé usar Visores en línea en su organización. En algunos casos, puede que desee deshabilitar algunas características en Visores en línea. Estas instrucciones hacen referencia a los parámetros que se establecen mediante los cmdlets de Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) y [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 ## Consideraciones sobre seguridad para Visores en línea
 
 Los archivos previstos para verse a través de un explorador web mediante Visores en línea no deben requerir la autenticación. En otras palabras, los archivos deben estar disponibles públicamente porque Visores en línea no puede realizar la autenticación cuando recupera archivos. Recomendamos encarecidamente que la granja de servidores de Office Web Apps Server que use para Visores en línea solo pueda tener acceso a la Intranet o a Internet, pero no a ambas. Esto se debe a que Office Web Apps Server no diferencia entre solicitudes de URL de la Intranet o de Internet. Alguien en Internet puede solicitar una dirección URL de intranet URL, por ejemplo, causando una fuga de seguridad si se ve un documento interno.
 
-Por el mismo motivo, si ha configurado Office Web Apps Server para conectarse solo a Internet, recomendamos encarecidamente que deshabilite la compatibilidad con UNC en Visores en línea. Para deshabilitar la compatibilidad de UNC, establezca el parámetro OpenFromUncEnabled en False usando los cmdlets de Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) (para nuevas granjas de servidores) o [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (para granjas de servidores existentes).
+Por el mismo motivo, si ha configurado Office Web Apps Server para conectarse solo a Internet, recomendamos encarecidamente que deshabilite la compatibilidad con UNC en Visores en línea. Para deshabilitar la compatibilidad de UNC, establezca el parámetro OpenFromUncEnabled en False usando los cmdlets de Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (para nuevas granjas de servidores) o [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (para granjas de servidores existentes).
 
 Como precaución de seguridad adicional, Visores en línea se limita a la visualización de archivos de Office de 10 MB como máximo.
 
 ## Opciones de configuración para Visores en línea
 
-Puede configurar Visores en línea usando los siguientes parámetros de Windows PowerShell en [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (para nuevas granjas de servidores) o [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (para granjas de servidores existentes).
+Puede configurar Visores en línea usando los siguientes parámetros de Windows PowerShell en [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (para nuevas granjas de servidores) o [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (para granjas de servidores existentes).
 
   - **OpenFromUrlEnabled**   Activa o desactiva Visores en línea. Este parámetro controla Visores en línea para archivos que tienen rutas de URL y UNC. De manera predeterminada, el parámetro está definido en False (deshabilitado) cuando crea una nueva granja de servidores de Office Web Apps Server.
 
