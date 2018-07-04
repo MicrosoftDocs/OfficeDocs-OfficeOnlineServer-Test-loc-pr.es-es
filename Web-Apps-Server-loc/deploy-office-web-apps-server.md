@@ -253,6 +253,7 @@ Si Office Web Apps Server funciona según lo previsto, debería ver un archivo X
 La granja ya está lista para proporcionar funcionalidad de Office Web Apps a hosts en HTTP. Visite [Configurar Office Web Apps para SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md) para obtener más información sobre cómo configurar hosts.
 
 ## Implementar una granja de un solo servidor de Office Web Apps Server que usa HTTPS
+<a name="singlehttps"> </a>
 
 Para la mayoría de los entornos de producción, se recomienda el uso de HTTPS para sus características de seguridad. Además, HTTPS es necesario si quiere proporcionar las funciones de Office Web Apps Server para Lync Server 2013, que permiten a los usuarios ver difusiones de PowerPoint en un explorador. Aquí se muestra cómo instalar una granja de un solo servidor de Office Web Apps Server que usa HTTPS. Deberá instalar un certificado en el servidor, tal como se describe en el tema sobre la [protección de comunicaciones de Office Web Apps Server mediante HTTPS](plan-office-web-apps-server.md).
 
@@ -318,7 +319,7 @@ La granja ya está lista para proporcionar las funciones de Office Web Apps a ho
   - [Implementación de Office Web Apps Server y Lync Server 2013](https://technet.microsoft.com/es-es/library/3370ab55-9949-4f32-b88b-5cffed6aaad8)
 
 ## Implementar una granja de varios servidores y de carga equilibrada de Office Web Apps Server que usa HTTPS
-
+<a name="multihttps"> </a>
 Si prevé que habrá mucho tráfico en la granja de servidores de Office Web Apps Server y desea estar disponible tanto en Internet como en la red interna, este tipo de topología es el indicado. Esta sección muestra cómo instalar una granja de varios servidores de Office Web Apps Server que usa un equilibrador de carga y HTTPS. Si le interesa, [obtenga más información sobre esta topología](plan-office-web-apps-server.md).
 
 Antes de comenzar, asegúrese de que el equilibrador de carga está configurado como se describe en el tema sobre los [Load balancer requirements for Office Web Apps Server](plan-office-web-apps-server.md). Además, deberá instalar un certificado en el equilibrador de carga, tal como se describe en el tema sobre la [protección de comunicaciones de Office Web Apps Server mediante HTTPS](plan-office-web-apps-server.md). Esta granja de Office Web Apps Server proporcionará las funciones de Office Web Apps para SharePoint 2013 y Lync Server 2013.
