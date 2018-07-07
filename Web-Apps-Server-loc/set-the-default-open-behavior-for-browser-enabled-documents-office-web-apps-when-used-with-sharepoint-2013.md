@@ -1,5 +1,5 @@
 ﻿---
-title: Establecer el comportamiento predeterminado para abrir documentos habilitados por el explorador (Office Web Apps cuando se usa con SharePoint 2013)
+title: Comportamiento predeterminado para abrir documentos (Office Web Apps)
 TOCTitle: Establecer el comportamiento predeterminado para abrir documentos habilitados por el explorador
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/es-es/library/Ee837425(v=office.15)
