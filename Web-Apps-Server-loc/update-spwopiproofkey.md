@@ -21,7 +21,9 @@ Actualiza la clave pública que se usa para establecer una conexión con la apli
 
 ## Sintaxis
 
-    Update-SPWOPIProofKey [-AssignmentCollection <SPAssignmentCollection>] [-ServerName <String>]
+```PowerShell
+Update-SPWOPIProofKey [-AssignmentCollection <SPAssignmentCollection>] [-ServerName <String>]
+```
 
 ## Descripción detallada
 
