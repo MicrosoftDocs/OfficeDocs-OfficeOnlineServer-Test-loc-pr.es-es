@@ -34,7 +34,7 @@ De manera predeterminada, después de configurar SharePoint 2013 para que use Of
 En general, la característica OpenInClient invalida los enlaces WOPI establecidos entre SharePoint 2013 y Office Web Apps Server. En otras palabras, si se habilita la característica OpenInClient de una colección de sitios o biblioteca de SharePoint 2013, los documentos se abrirán en la aplicación cliente incluso si se ha configurado el servidor de SharePoint 2013 para usar Office Web Apps Server.
 
 
-> [!NOTE]
+> [!NOTE]  
 > La configuración del comportamiento predeterminado para abrir los documentos habilitados para el explorador no afectará al hecho de que los usuarios puedan usar las características <STRONG>Desproteger</STRONG> y <STRONG>Enviar a</STRONG> en SharePoint 2013 para descargar documentos. Para obtener información sobre cómo configurar los permisos para desproteger, descargar y visualizar en SharePoint 2013, vea <A href="https://technet.microsoft.com/es-es/library/cc262939(v=office.15)">Planear los permisos para los sitios y el contenido en SharePoint 2013</A>.
 
 
@@ -44,13 +44,13 @@ En general, la característica OpenInClient invalida los enlaces WOPI establecid
 Use uno de los siguientes procedimientos para establecer la característica OpenInClient en SharePoint 2013.
 
 
-> [!NOTE]
+> [!NOTE]  
 > Algunos de estos procedimientos usan el Shell de administración de SharePoint 2013 para ejecutar los cmdlets de SharePoint. Si elige usar la consola de Windows PowerShell, deberá agregar el complemento Microsoft.SharePoint.PowerShell mediante el cmdlet <STRONG>Add-PSSnapin</STRONG>. Para más información sobre cómo usar Windows PowerShell con SharePoint 2013, vea <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Usar Windows PowerShell para administrar SharePoint 2013</A>.
 
 
 
 
-> [!NOTE]
+> [!NOTE]  
 > Puede completar las tareas en Conjuntos de aplicaciones de Office 2013 con un mouse, los métodos abreviados de teclado o el modo táctil. Para obtener más información sobre cómo usar los métodos abreviados del teclado o el modo táctil con los productos y servicios de Office, vea <A href="http://go.microsoft.com/fwlink/p/?linkid=249150">Métodos abreviados de teclado</A> y <A href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guía táctil de Office</A>.
 
 
@@ -78,7 +78,7 @@ Use uno de los siguientes procedimientos para establecer la característica Open
     Los administradores pueden usar el cmdlet **Add-SPShellAdmin** para conceder los permisos necesarios para usar los cmdlets de SharePoint 2013.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Si no tiene permisos, póngase en contacto con el administrador del programa de instalación o con el administrador de SQL Server para solicitarlos. Para obtener información adicional sobre permisos de Windows PowerShell, vea <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> y <A href="https://technet.microsoft.com/es-es/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
@@ -106,24 +106,32 @@ Use uno de los siguientes procedimientos para establecer la característica Open
 3.  En el símbolo del sistema de Windows PowerShell, escriba uno de los siguientes comandos:
     
       - Para habilitar la característica OpenInClient para una colección de sitios específica (para abrir documentos en la aplicación cliente), escriba este comando:
-        
+
+      ```PowerShell  
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+      ```
+
         donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
     
       - Para habilitar la característica OpenInClient para todas las colecciones de sitios (para abrir documentos en la aplicación cliente), escriba este comando:
-        
+      
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
-    
+      ```
+
       - Para deshabilitar la característica OpenInClient para una colección de sitios específica (para abrir documentos en el explorador), escriba este comando:
-        
+      
+      ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+      ```
+
         donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
     
       - Para deshabilitar la característica OpenInClient para todas las colecciones de sitios (para abrir documentos en el explorador), escriba este comando:
-        
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+      ```
 
  **Establecer el comportamiento de apertura predeterminado para una biblioteca de documentos mediante la página de configuración de la biblioteca de documentos**
 
@@ -156,7 +164,7 @@ Use uno de los siguientes procedimientos para establecer la característica Open
     Los administradores pueden usar el cmdlet **Add-SPShellAdmin** para conceder los permisos necesarios para usar los cmdlets de SharePoint 2013.
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Si no tiene permisos, póngase en contacto con el administrador del programa de instalación o con el administrador de SQL Server para solicitarlos. Para obtener información adicional sobre permisos de Windows PowerShell, vea <A href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</A> y <A href="https://technet.microsoft.com/es-es/library/ff607596(v=office.15)">Add-SPShellAdmin</A>.
 
 
@@ -182,9 +190,11 @@ Use uno de los siguientes procedimientos para establecer la característica Open
     3.  En la barra de la aplicación, seleccione **Ejecutar como administrador**.
 
 3.  Escriba el siguiente comando en el símbolo del sistema de Windows PowerShell:
-    
+      
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
-    
+      ```
+      
     donde:
     
       - *\<SiteCollURL\>* es la URL de la colección de sitios donde residen las bibliotecas de documentos.

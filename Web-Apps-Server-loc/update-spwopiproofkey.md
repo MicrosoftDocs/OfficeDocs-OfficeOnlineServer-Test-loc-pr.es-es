@@ -81,7 +81,9 @@ Shell de administración de SharePoint
 
 \--------------EJEMPLO-----------------
 
+```PowerShell
     Update-SPWOPIProofKey -ServerName "Server.corp.Contoso.com"
+```
 
 En este ejemplo se obtiene la clave pública actual de la aplicación WOPI (por ejemplo, un servidor que ejecuta Office Web Apps Server) y se actualiza la clave almacenada en la granja de SharePoint.
 

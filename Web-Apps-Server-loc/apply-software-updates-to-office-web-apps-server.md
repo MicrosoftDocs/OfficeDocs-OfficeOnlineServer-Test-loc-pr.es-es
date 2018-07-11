@@ -81,8 +81,10 @@ Para aplicar actualizaciones de software a una granja de Office Web Apps Server 
 1.  Si aún no ha descargado la actualización al Office Web Apps Server, descargue la actualización de Office Web Apps Server que desee aplicar del [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/p/?linkid=280274).
 
 2.  En el Office Web Apps Server en el que desee aplicar la actualización de software, abra el mensaje de Windows PowerShell como administrador y ejecute el siguiente comando.
-    
+
+```PowerShell    
         Remove-OfficeWebAppsMachine
+```
 
 3.  Instale la actualización de Office Web Apps Server en ese servidor. Si se le solicita, reinicie el servidor.
 
@@ -90,8 +92,10 @@ Para aplicar actualizaciones de software a una granja de Office Web Apps Server 
     
     El código del siguiente ejemplo crea una granja de servidores de Office Web Apps Server nueva llamada http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
-    
+    ```
+
     En [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
 
 ## Aplicar actualizaciones de software a una granja de Office Web Apps Server de varios servidores
@@ -106,7 +110,9 @@ Para aplicar actualizaciones de software en una granja de Office Web Apps Server
 
 3.  En ese Office Web Apps Server, abra el mensaje de Windows PowerShell como administrador y ejecute el siguiente comando.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 4.  Instale la actualización de Office Web Apps Server en ese servidor. Si se le solicita, reinicie el servidor.
 
@@ -114,8 +120,10 @@ Para aplicar actualizaciones de software en una granja de Office Web Apps Server
     
     El código del siguiente ejemplo crea una granja de servidores de Office Web Apps Server nueva llamada http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
-    
+    ```
+
     En [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) se describen otros parámetros que configuran los servicios de traducción, los servidores proxy, la compatibilidad con las imágenes prediseñadas y los visores en línea.
 
 6.  En función del número de servidores que tenga en la granja de Office Web Apps Server, equilibre el tráfico de carga de la nueva granja. Puede aplazar este paso hasta que disponga de más servidores actualizados que se unirán a la granja.
@@ -127,9 +135,11 @@ Para aplicar actualizaciones de software en una granja de Office Web Apps Server
     2.  Instale la actualización de Office Web Apps Server en ese servidor. Si se le solicita, reinicie el servidor.
     
     3.  Abra el mensaje de Windows PowerShell como administrador y ejecute el siguiente comando. El parámetro **–MachineToJoin** agrega el servidor actual a una granja de Office Web Apps Server existente. En este caso, desea agregar el servidor a la granja de Office Web Apps Server actualizada. Igualmente, utilice el nombre de equipo del servidor de la granja de Office Web Apps Server actualizada.
-        
-            New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
+    ```PowerShell    
+            New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+    ```
+    
 ## Consulte también
 
 
