@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Se aplica a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Se aplica a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Última modificación del tema:**2016-12-16_
+_<strong>Última modificación del tema:</strong>2016-12-16_
 
 **Resumen:**   explica cómo configurar el comportamiento predeterminado para abrir los documentos de Office en las colecciones de sitios y en las bibliotecas de documentos de SharePoint.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Se aplica a:**Office Web Apps Server_
+_<strong>Se aplica a:</strong>Office Web Apps Server_
 
-_**Última modificación del tema:**2016-12-16_
+_<strong>Última modificación del tema:</strong>2016-12-16_
 
 **Resumen:** contiene vínculos a artículos de referencia técnica, como ayuda para los cmdlets de Windows PowerShell para OfficeWebApps, para Office Web Apps Server.
 

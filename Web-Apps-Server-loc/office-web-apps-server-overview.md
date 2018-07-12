@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Se aplica a:**Office Web Apps Server_
+_<strong>Se aplica a:</strong>Office Web Apps Server_
 
-_**Última modificación del tema:**2017-05-26_
+_<strong>Última modificación del tema:**2017-05-26_
 
 **Resumen:** descubra Office Web Apps Server y la funcionalidad de Office basada en explorador que ofrece para hosts compatibles.
 
