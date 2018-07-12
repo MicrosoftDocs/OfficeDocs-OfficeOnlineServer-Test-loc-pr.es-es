@@ -54,7 +54,7 @@ Asegúrese de haber leído estos recursos antes de empezar:
   - De manera predeterminada, Office Web Apps Server le permite ver archivos de Office, pero no editarlos. Para hacerlo, necesitará una licencia de edición, sobre la que puede obtener información en [Planificar Office Web Apps (cuando se usa con SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) y [Configurar licencias en SharePoint Server 2013](https://technet.microsoft.com/es-es/library/jj219627\(v=office.15\)).
 
 
-> [!NOTE]
+> [!NOTE]  
 > Puede completar las tareas en todo Conjuntos de aplicaciones de Office 2013 con un mouse, los métodos abreviados de teclado o el modo táctil. Para información sobre cómo usar los métodos abreviados y el modo táctil con los productos y servicios de Office, consulte <A href="http://go.microsoft.com/fwlink/p/?linkid=249150">Métodos abreviados de teclado</A> y <A href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guía de tecnología táctil de Office</A>.
 
 
@@ -85,20 +85,26 @@ Windows Server 2008 R2, Windows Server 2012 y Windows Server 2012 R2 tiene
 
 2.  Abra el símbolo del sistema de Windows PowerShell como administrador y ejecute estos comandos para instalar los roles y servicios necesarios.
     
+    ```PowerShell
         Import-Module ServerManager
-    
+    ```
+
     A continuación, ejecute este comando:
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
-    
+    ```
+
     Si se le solicita, reinicie el servidor.
 
 **En Windows Server 2012**
 
 1.  Abra el símbolo del sistema de Windows PowerShell como administrador y ejecute este comando para instalar los roles y servicios necesarios.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
-    
+    ```
+
     Si se le solicita, reinicie el servidor.
 
 **En Windows Server 2012 R2**
@@ -109,8 +115,10 @@ Windows Server 2008 R2, Windows Server 2012 y Windows Server 2012 R2 tiene
 
 2.  Abra el símbolo del sistema de Windows PowerShell como administrador y ejecute este comando para instalar los roles y servicios necesarios.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
-    
+    ```
+
     Si se le solicita, reinicie el servidor.
 
 ## Paso 2: instalar Office Web Apps Server y las actualizaciones relacionadas
@@ -136,7 +144,7 @@ Complete los siguientes pasos en todos los servidores que ejecutarán Office Web
 6.  Descargue e instale [Office Web Apps Server SP1](https://go.microsoft.com/fwlink/p/?linkid=510097) (Recomendado para Windows Server 2012 y Windows Server 2008 R2 SP1. Obligatorio para Windows Server 2012 R2.)
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Si aplica Office Web Apps Server SP1 en un momento posterior, siga las instrucciones de <A href="apply-software-updates-to-office-web-apps-server.md">Aplicar actualizaciones de software a Office Web Apps Server</A>.
 
 
@@ -144,7 +152,7 @@ Complete los siguientes pasos en todos los servidores que ejecutarán Office Web
 7.  Compruebe si hay actualizaciones más recientes de Office Web Apps Server consultando la lista del [centro de actualizaciones de TechNet para Office, los servidores de Office y otros productos relacionados](https://go.microsoft.com/fwlink/p/?linkid=280271).
     
 
-    > [!NOTE]
+    > [!NOTE]  
     > Si no ha instalado Office Web Apps Server SP1, aplique <A href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</A>.
 
 
@@ -217,7 +225,9 @@ Puede usar esta granja de Office Web Apps Server para proporcionar las funciones
 
 Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidores de Office Web Apps Server que conste de un solo servidor, como se muestra en el ejemplo siguiente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Parámetros**
 
@@ -239,6 +249,7 @@ Una vez creada la granja de servidores, los detalles correspondientes aparecen e
 
 Si Office Web Apps Server funciona según lo previsto, debería ver un archivo XML de detección del protocolo de Interfaz de plataforma abierta de aplicación web (WOPI) en el explorador web. Las primeras líneas del archivo deberían ser similares a las del siguiente ejemplo.
 
+```XML
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
@@ -247,6 +258,7 @@ Si Office Web Apps Server funciona según lo previsto, debería ver un archivo X
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```    
 
 ## Paso 3: configurar el host
 
@@ -267,7 +279,9 @@ Esta granja de servidores de Office Web Apps Server proporcionará las funciones
 
 Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidores de Office Web Apps Server que conste de un solo servidor, como se muestra en el ejemplo siguiente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Parámetros**
 
@@ -291,7 +305,7 @@ Una vez creada la granja de servidores, los detalles correspondientes aparecen e
 
 Si Office Web Apps Server funciona según lo previsto, debería ver un archivo XML de detección del protocolo de Interfaz de plataforma abierta de aplicación web (WOPI) en el explorador web. Las primeras líneas del archivo deberían ser similares a las del siguiente ejemplo:
 
-``` 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -305,7 +319,7 @@ default="true" ext="xls"/><action name="view"
 ```
 
 
-> [!NOTE]
+> [!NOTE]  
 > En función de la configuración de seguridad del explorador web, puede que vea un mensaje que le indica que seleccione <STRONG>Mostrar todo el contenido</STRONG> antes de que se muestre el contenido del archivo XML de detección.
 
 
@@ -332,7 +346,9 @@ Antes de comenzar, asegúrese de que el equilibrador de carga está configurado 
 
 Use el comando **New-OfficeWebAppsFarm** para crear una nueva granja de servidores de Office Web Apps Server en el primer servidor, tal como se muestra en el ejemplo siguiente.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Parámetros**
 
@@ -352,7 +368,9 @@ Si ve los mensajes “500 excepciones de servicio web” o “500.21: error inte
 
 Una vez que el primer servidor ejecuta Office Web Apps Server, ejecute el comando **New-OfficeWebAppsMachine** en cada servidor que quiera agregar a la granja de Office Web Apps Server. Para el parámetro **–MachineToJoin**, use el nombre de equipo de un servidor que ya esté en la granja de Office Web Apps Server. Por ejemplo, si server1.contoso.com ya está en la granja, use lo siguiente:
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 ¿Desea más información sobre estos parámetros? Puede encontrarlos en [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
@@ -364,11 +382,12 @@ Una vez creada la granja de servidores, los detalles correspondientes aparecen e
 
 Si Office Web Apps Server funciona según lo previsto, debería ver un archivo XML de detección del protocolo de Interfaz de plataforma abierta de aplicación web (WOPI) en el explorador web. Las primeras líneas del archivo deberían ser similares a las del siguiente ejemplo:
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```
 
-
-> [!NOTE]
+> [!NOTE]  
 > En función de la configuración de seguridad del explorador web, puede que vea un mensaje que le indica que seleccione <STRONG>Mostrar todo el contenido</STRONG> antes de que se muestre el contenido del archivo XML de detección.
 
 
@@ -387,16 +406,18 @@ Si las características de .NET Framework 3.5 se instalaron y posteriormente se 
 
 **Para Windows Server 2008 R2**
 
-```
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
 ```
-```
+```PowerShell
     iisreset /restart /noforce
 ```
 
 **Para Windows Server 2012 o Windows Server 2012 R2**
 
+```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## Consulte también
 
