@@ -15,7 +15,7 @@ ms.translationtype: MT
 
 _<strong>Se aplica a:</strong>Office Web Apps Server_
 
-_<strong>Última modificación del tema:**2017-10-10_
+_<strong>Última modificación del tema:</strong>2017-10-10_
 
 **Resumen:** describe los requisitos y requisitos previos de Office Web Apps Server, como HTTPS, certificados, virtualización, equilibrio de carga, topologías y seguridad.
 
