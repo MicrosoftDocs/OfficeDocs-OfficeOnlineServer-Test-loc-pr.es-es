@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps, Office Web Apps Server, SharePoin
 
 _<strong>Última modificación del tema:</strong>2016-12-16_
 
+
 **Resumen:** contiene artículos de utilidad para trabajar con Office Web Apps Server en la arquitectura recientemente actualizada de Office Web Apps.
 
 **Público:** profesionales de TI

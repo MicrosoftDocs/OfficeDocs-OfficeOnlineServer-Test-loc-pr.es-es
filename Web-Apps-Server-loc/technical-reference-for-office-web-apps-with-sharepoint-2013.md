@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps, SharePoint Foundation 2013, Share
 
 _<strong>Última modificación del tema:</strong>2016-12-16_
 
+
 **Resumen:** busque artículos de referencia técnica, como ayuda para los cmdlets de Windows PowerShell para SPWOPI, para Office Web Apps.
 
 **Público:** profesionales de TI

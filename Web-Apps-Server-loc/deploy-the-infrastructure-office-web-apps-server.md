@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps Server_
 
 _<strong>Última modificación del tema:</strong>2016-12-16_
 
+
 **Resumen:** contiene artículos sobre Office Web Apps Server y sobre cómo ofrece funciones de Office Web Apps a los hosts.
 
 **Público:** profesionales de TI

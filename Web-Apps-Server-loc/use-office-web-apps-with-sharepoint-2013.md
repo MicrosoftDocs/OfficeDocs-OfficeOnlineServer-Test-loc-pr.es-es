@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps, SharePoint Foundation 2013, Share
 
 _<strong>Última modificación del tema:</strong>2017-05-26_
 
+
 **Resumen:** Contiene artículos que le ayudarán a aprender a implementar y configurar Office Web Apps para SharePoint 2013 local.
 
 **Audiencia:** profesionales de TI

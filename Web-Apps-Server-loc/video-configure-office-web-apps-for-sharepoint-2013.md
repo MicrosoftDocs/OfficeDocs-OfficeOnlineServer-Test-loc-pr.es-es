@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps, Office Web Apps Server, SharePoin
 
 _<strong>Última modificación del tema:</strong>2016-12-16_
 
+
 **Resumen:** lo guía a través de los nueve pasos principales para configurar una granja de servidores de Office Web Apps Server para que funcione con SharePoint 2013.
 
 Configurar Office Web Apps para SharePoint 2013 es un proceso bastante simple. En este vídeo se muestra cómo instalar Office Web Apps Server y configurar SharePoint 2013 para usar Office Web Apps Server en un entorno de prueba.

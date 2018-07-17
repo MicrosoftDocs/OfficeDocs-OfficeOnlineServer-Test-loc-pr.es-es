@@ -17,6 +17,7 @@ _<strong>Se aplica a:</strong>Office Web Apps Server_
 
 _<strong>Última modificación del tema:</strong>2017-10-05_
 
+
 **Resumen:** explica cómo implementar Office Web Apps Server de forma local para su uso por parte de SharePoint 2013 y Lync Server 2013.
 
 **Audiencia:** profesionales de TI
@@ -172,43 +173,19 @@ Para instalar los paquetes de idioma, siga estos pasos.
 
 4.  Cuando el programa de instalación complete la instalación de Office Web Apps Server, elija **Cerrar**.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Para instalar los paquetes de idioma después de crear la granja de servidores de Office Web Apps Server, debe quitar un servidor de la granja, instalar en él el paquete de idioma y agregarlo de nuevo a la granja.</p></li>
-<li><p>Para que un paquete de idioma funcione correctamente, deberá instalarlo en todos los servidores de la granja de servidores.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> <ul>
+> <li><p>Para instalar los paquetes de idioma después de crear la granja de servidores de Office Web Apps Server, debe quitar un servidor de la granja, instalar en él el paquete de idioma y agregarlo de nuevo a la granja.</p></li>
+> <li><p>Para que un paquete de idioma funcione correctamente, deberá instalarlo en todos los servidores de la granja de servidores.</p></li>
+> </ul>
 
 ## Implementar la granja de servidores de Office Web Apps Server
 
 Siga los procedimientos de una de las tres secciones siguientes, en función del tipo de granja de Office Web Apps Server que desea crear.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.tip(Office.15).gif" title="Sugerencia" alt="Sugerencia" /><strong>Sugerencia:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si Windows PowerShell no reconoce el cmdlet <strong>New-OfficeWebAppsFarm</strong> al ejecutarlo, puede que tenga que importar el módulo <strong>OfficeWebApps</strong>. Use este comando:<br />
-<code>Import-Module -Name OfficeWebApps</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Si Windows PowerShell no reconoce el cmdlet <strong>New-OfficeWebAppsFarm</strong> al ejecutarlo, puede que tenga que importar el módulo <strong>OfficeWebApps</strong>. Use este comando:<br />
+<code>Import-Module -Name OfficeWebApps</code>
 
 
 ## Implementar una granja de un solo servidor de Office Web Apps Server que usa HTTP

@@ -12,7 +12,6 @@ ms.translationtype: HT
 # Novedades de Office Web Apps al usarlo con SharePoint 2013
 
  
-
 _<strong>Se aplica a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
 _<strong>Última modificación del tema:</strong>2016-12-16_

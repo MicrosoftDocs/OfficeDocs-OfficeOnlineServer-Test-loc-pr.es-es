@@ -17,25 +17,16 @@ _<strong>Se aplica a:</strong>Office Web Apps Server_
 
 _<strong>Última modificación del tema:</strong>2017-05-26_
 
+
 **Resumen:** descubra Office Web Apps Server y la funcionalidad de Office basada en explorador que ofrece para hosts compatibles.
 
 **Público:** profesionales de TI
 
 Office Web Apps Server es un nuevo producto de servidor de Office que ofrece versiones basadas en el Explorador de Word, PowerPoint, Excel y OneNote. Un único conjunto de servidor de Office Web Apps puede admitir usuarios que tienen acceso los archivos de OfficeSharePoint 2013, Lync Server 2013, carpetas compartidas y sitios Web. El nuevo modelo de implementación independiente significa que puede administrar actualizaciones al conjunto de servidor de Office Web Apps independientemente de otros productos de servidor de Office que se implementan en la organización.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artículo forma parte de <a href="content-roadmap-for-office-web-apps-server.md">Guía básica de contenido de Office Web Apps Server</a>. Use esta guía básica como punto de partida para consultar artículos, descargas y vídeos que le ayuden a implementar y administrar Office Web Apps Server.<br />
-<strong>¿Necesita ayuda con Office Web Apps en su escritorio o dispositivo móvil?</strong> Para obtener información, busque &quot;Office Web Apps&quot; en <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artículo forma parte de <a href="content-roadmap-for-office-web-apps-server.md">Guía básica de contenido de Office Web Apps Server</a>. Use esta guía básica como punto de partida para consultar artículos, descargas y vídeos que le ayuden a implementar y administrar Office Web Apps Server.<br />
+<strong>¿Necesita ayuda con Office Web Apps en su escritorio o dispositivo móvil?</strong> Para obtener información, busque &quot;Office Web Apps&quot; en <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 En este artículo:

@@ -12,10 +12,10 @@ ms.translationtype: HT
 # Guía básica de contenido de Office Web Apps Server
 
  
-
 _<strong>Se aplica a:</strong>Office Web Apps, Office Web Apps Server_
 
 _<strong>Última modificación del tema:</strong>2016-12-16_
+
 
 **Resumen:** proporciona una guía a los artículos, las descargas y otros recursos que ayudarán a los profesionales de TI a implementar y administrar Office Web Apps Server.
 
@@ -27,19 +27,9 @@ Office Web Apps Server es un nuevo producto del servidor de Office que proporcio
 
 Si es un profesional de TI en busca de información sobre Outlook Web App, vea el tema sobre las [novedades de Outlook Web App en Exchange 2013](http://technet.microsoft.com/es-es/library/jj150522.aspx).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artículo está destinado a administradores que implementan y administran Office Web Apps Server en sus organizaciones.<br />
-<strong>¿Está buscando ayuda con Office Web Apps en el escritorio o en el dispositivo móvil?</strong> Quizás le resulte útil leer una <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">introducción a Office Web Apps</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artículo está destinado a administradores que implementan y administran Office Web Apps Server en sus organizaciones.<br />
+<strong>¿Está buscando ayuda con Office Web Apps en el escritorio o en el dispositivo móvil?</strong> Quizás le resulte útil leer una <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">introducción a Office Web Apps</a>.
 
 
 En esta tabla se describen los recursos que están disponibles para profesionales de TI que implementan y administran Office Web Apps Server.
