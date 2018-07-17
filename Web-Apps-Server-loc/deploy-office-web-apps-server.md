@@ -13,9 +13,10 @@ ms.translationtype: HT
 
  
 
-_**Se aplica a:** Office Web Apps Server_
+_<strong>Se aplica a:</strong>Office Web Apps Server_
 
-_**Última modificación del tema:** 2017-10-05_
+_<strong>Última modificación del tema:</strong>2017-10-05_
+
 
 **Resumen:** explica cómo implementar Office Web Apps Server de forma local para su uso por parte de SharePoint 2013 y Lync Server 2013.
 

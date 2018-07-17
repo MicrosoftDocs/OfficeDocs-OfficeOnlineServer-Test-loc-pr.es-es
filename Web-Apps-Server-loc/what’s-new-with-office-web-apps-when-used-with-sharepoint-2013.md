@@ -12,10 +12,9 @@ ms.translationtype: HT
 # Novedades de Office Web Apps al usarlo con SharePoint 2013
 
  
+_<strong>Se aplica a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Se aplica a:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Última modificación del tema:** 2016-12-16_
+_<strong>Última modificación del tema:</strong>2016-12-16_
 
 **Resumen:** describe las nuevas características disponibles para administradores y usuarios de SharePoint 2013 cuando usan Office Web Apps.
 
