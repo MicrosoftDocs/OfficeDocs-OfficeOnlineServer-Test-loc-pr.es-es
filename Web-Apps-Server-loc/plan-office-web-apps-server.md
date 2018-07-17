@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Se aplica a:**Office Web Apps Server_
+_**Se aplica a:** Office Web Apps Server_
 
-_**Última modificación del tema:**2017-10-10_
+_**Última modificación del tema:** 2017-10-10_
 
 **Resumen:** describe los requisitos y requisitos previos de Office Web Apps Server, como HTTPS, certificados, virtualización, equilibrio de carga, topologías y seguridad.
 
@@ -95,18 +95,8 @@ En primer lugar, estas son algunas cosas que NO debe hacer al implementar Office
 
 Ahora para los elementos que SÍ tiene que instalar, consulte la siguiente tabla para obtener información.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>sólo está disponible para su descarga desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Centro de servicio de licencias de volumen (VLSC)</a>Office Web Apps Server. Para descargar Office Web Apps Server debe tener una licencia, bajo un contrato de licencias por volumen, Office Professional Plus 2013, Office Standard 2013 o Office para Mac 2011. La descarga se encuentra en los productos de Office en el portal VLSC.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> sólo está disponible para su descarga desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Centro de servicio de licencias de volumen (VLSC)</a>Office Web Apps Server. Para descargar Office Web Apps Server debe tener una licencia, bajo un contrato de licencias por volumen, Office Professional Plus 2013, Office Standard 2013 o Office para Mac 2011. La descarga se encuentra en los productos de Office en el portal VLSC.
 
 
 ### Descargas, roles de servidor y características necesarios para Office Web Apps Server
@@ -406,18 +396,8 @@ La lista Permitir es una característica de seguridad que impide a los hosts no 
 
 Puede agregar dominios a la lista Permitir después de haber creado la granja de servidores de Office Web Apps Server. Para saber cómo agregar dominios a la lista Permitir, vea [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /> <strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si no agrega dominios a la lista Permitir, Office Web Apps Server permite solicitudes de archivos a hosts en cualquier dominio. No deje esta lista en blanco si se puede tener acceso a su granja de servidores de Office Web Apps Server desde Internet. De lo contrario, cualquiera puede usar la granja de servidores de Office Web Apps Server para ver y modificar contenido.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Si no agrega dominios a la lista Permitir, Office Web Apps Server permite solicitudes de archivos a hosts en cualquier dominio. No deje esta lista en blanco si se puede tener acceso a su granja de servidores de Office Web Apps Server desde Internet. De lo contrario, cualquiera puede usar la granja de servidores de Office Web Apps Server para ver y modificar contenido.
 
 
 ## Planeación de Visores en línea con Office Web Apps Server

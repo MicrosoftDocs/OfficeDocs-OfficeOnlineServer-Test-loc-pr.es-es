@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Se aplica a:**Office Web Apps Server_
+_**Se aplica a:** Office Web Apps Server_
 
-_**Última modificación del tema:**2016-12-16_
+_**Última modificación del tema:** 2016-12-16_
 
 **Resumen:** se explica cómo se aplican las actualizaciones de software en una granja de Office Web Apps Server.
 
@@ -23,35 +23,13 @@ _**Última modificación del tema:**2016-12-16_
 
 Tras una nueva versión de Office Web Apps Server, Microsoft ofrece una serie de actualizaciones de software para tratar de mejorar la seguridad del servidor, el rendimiento y la fiabilidad. En este artículo se describe cómo se aplican las actualizaciones de software a los servidores individuales en una granja de Office Web Apps Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219448.important(Office.15).gif" title="Importante" alt="Importante" /><strong>Importante:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artículo forma parte de <a href="content-roadmap-for-office-web-apps-server.md">Guía básica de contenido de Office Web Apps Server</a>. Use esta guía básica como punto de partida para consultar artículos, descargas y vídeos que le ayuden a implementar y administrar Office Web Apps Server.<br />
-<strong>¿Necesita ayuda con Office Web Apps en su escritorio o dispositivo móvil?</strong> Puede encontrar esta información buscando &quot;Office Web Apps&quot; en <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artículo forma parte de <a href="content-roadmap-for-office-web-apps-server.md">Guía básica de contenido de Office Web Apps Server</a>. Use esta guía básica como punto de partida para consultar artículos, descargas y vídeos que le ayuden a implementar y administrar Office Web Apps Server.<br />
+<strong>¿Necesita ayuda con Office Web Apps en su escritorio o dispositivo móvil?</strong> Puede encontrar esta información buscando &quot;Office Web Apps&quot; en <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
-
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ966220.warning(Office.15).gif" title="Advertencia" alt="Advertencia" /><strong>Advertencia:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La aplicación de actualizaciones de Office Web Apps Server mediante el proceso de actualizaciones automáticas no es compatible con Office Web Apps Server. Esto se debe a que las actualizaciones a un Office Web Apps Server se deben aplicar de una forma específica, como se describe en este artículo. Si las actualizaciones de Office Web Apps Server se aplican de forma automática, es posible que los usuarios no puedan ver o editar documentos en Office Web Apps y, en ese caso, tendrá que recompilar su granja de Office Web Apps Server. Para ello, debe quitar el Office Web Apps Server de la granja mediante <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, desinstalar Office Web Apps Server con Agregar o quitar programas y, después, volver a instalar Office Web Apps Server siguiendo los pasos que se describen en <a href="deploy-office-web-apps-server.md">Implementar Office Web Apps Server</a>. Tras completar la nueva instalación, aplique la actualización siguiendo los pasos que se describen en este artículo.<br />
-Es importante que revise las instrucciones de <a href="plan-office-web-apps-server.md">Planeación de actualizaciones para Office Web Apps Server</a> y establezca un proceso de actualización para la granja de Office Web Apps Server.</td>
-</tr>
-</tbody>
-</table>
-
+> [!Warning]
+> La aplicación de actualizaciones de Office Web Apps Server mediante el proceso de actualizaciones automáticas no es compatible con Office Web Apps Server. Esto se debe a que las actualizaciones a un Office Web Apps Server se deben aplicar de una forma específica, como se describe en este artículo. Si las actualizaciones de Office Web Apps Server se aplican de forma automática, es posible que los usuarios no puedan ver o editar documentos en Office Web Apps y, en ese caso, tendrá que recompilar su granja de Office Web Apps Server. Para ello, debe quitar el Office Web Apps Server de la granja mediante <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, desinstalar Office Web Apps Server con Agregar o quitar programas y, después, volver a instalar Office Web Apps Server siguiendo los pasos que se describen en <a href="deploy-office-web-apps-server.md">Implementar Office Web Apps Server</a>. Tras completar la nueva instalación, aplique la actualización siguiendo los pasos que se describen en este artículo.<br />
+Es importante que revise las instrucciones de <a href="plan-office-web-apps-server.md">Planeación de actualizaciones para Office Web Apps Server</a> y establezca un proceso de actualización para la granja de Office Web Apps Server.
 
 ## Antes de empezar
 
