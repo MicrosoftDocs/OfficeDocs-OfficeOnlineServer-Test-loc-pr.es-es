@@ -112,7 +112,7 @@ Use uno de los siguientes procedimientos para establecer la característica Open
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
 
-        donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
+      donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
     
       - Para habilitar la característica OpenInClient para todas las colecciones de sitios (para abrir documentos en la aplicación cliente), escriba este comando:
       
@@ -126,7 +126,7 @@ Use uno de los siguientes procedimientos para establecer la característica Open
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
 
-        donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
+      donde *\<SiteCollURL\>* es la dirección URL del conjunto de sitios.
     
       - Para deshabilitar la característica OpenInClient para todas las colecciones de sitios (para abrir documentos en el explorador), escriba este comando:
 
