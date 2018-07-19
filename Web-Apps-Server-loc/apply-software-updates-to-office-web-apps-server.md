@@ -61,9 +61,9 @@ Para aplicar actualizaciones de software a una granja de Office Web Apps Server 
 
 2.  En el Office Web Apps Server en el que desee aplicar la actualización de software, abra el mensaje de Windows PowerShell como administrador y ejecute el siguiente comando.
 
-```PowerShell    
+    ```PowerShell    
         Remove-OfficeWebAppsMachine
-```
+    ```
 
 3.  Instale la actualización de Office Web Apps Server en ese servidor. Si se le solicita, reinicie el servidor.
 
